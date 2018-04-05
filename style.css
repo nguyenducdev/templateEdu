@@ -1,6 +1,10 @@
+html {
+  font-family: "Source Sans Pro",helvetica,sans-serif;
+}
 body {
   background-color: #f4f4f4;
   font-size: 1em;
+  font-family: "Source Sans Pro",helvetica,sans-serif !important;
 }
 nav {
   color: #f59f00;
@@ -31,7 +35,7 @@ li.nav-item::after {
   color: #f59f00;
   position: absolute;
   right: 0;
-  top: 20%;
+  top: 26%;
 }
 
 li.nav-item:last-child:after
@@ -132,3 +136,111 @@ li.nav-item:last-child:after
   border: 1px solid #e1e3df;
   min-height: 2.5rem;
 }
+
+.box-sale {
+  position: relative;
+}
+
+.box-sale .premium_item_ribon {
+  position: absolute;
+  top: 0;
+}
+
+.box-sale .premium_item_ribon .ribbon {
+  font-size: 16px!important;
+  width: 50%;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  margin: 1em 6em 0 0;
+}
+
+.box-sale .premium_item_ribon .ribbon:after {
+      content: "";
+    position: absolute;
+    display: block;
+    bottom: -.8em;
+    border: 1em solid #c58836;
+    z-index: 1;
+    right: -2.9em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+
+.box-sale .premium_item_ribon .ribbon .ribbon-content {
+  padding: .5em 2em;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  background: #e89f3e;
+  font-weight: 700;
+}
+
+.box-sale .premium_item_ribon .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #67461b transparent;
+  bottom: -.8em;
+  right: 0;
+  border-width: .8em 1em 0 0;
+}
+
+.footer-wrapper {
+  background-color: #f59f00;
+  color: #fff;
+  font-weight: 600;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+
+.footer-bottom {
+    background-color: #373f4a;
+    color: #627185;
+}
+
+.closed {
+  padding: 0;
+}
+ul.closed > li {
+  list-style: none;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+ul.closed > li > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul.closed > li > a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+ul.socical {
+  padding: 0;
+  list-style-type: none;
+}
+ul.socical > li {
+  display: inline-block;
+  width: 2em;
+}
+ul.socical > li > a {
+  border: 1px solid;
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+}
+
+
+@media only screen and (max-width: 991px) {
+  li.nav-item::after {
+    content: "";
+  }
+}
+
+
